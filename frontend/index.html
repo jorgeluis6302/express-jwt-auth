@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .response {
+      margin: 5px;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+    }
+
+    .success-response {
+      border: 2px solid green;
+    }
+
+    .error-response {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <h1>JWT Auth</h1>
+  <div>
+    <h3>Login</h3>
+    <form method="POST" id="login-form">
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Username"
+      />
+      <br>
+      <input
+        type="text"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+      <br>
+      <button type="submit">Login</button>
+    </form>
+    <div id="login-result"></div>
+  </div>
+
+  <div>
+    <h3>Users</h3>
+    <button id="get-users-button" type="button">Get Users</button>
+    <br>
+    <textarea id="get-users-result"></textarea>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
